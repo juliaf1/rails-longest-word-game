@@ -1,0 +1,9 @@
+<h3>Result for <strong><%= params["word"].capitalize %></strong></h3>
+
+<% if @not_included %>
+  <p>You have to use the grid letters.</p>
+<% elsif @not_found %>
+  <p>You have to type a valid English word.</p>
+<% else %>
+  <p>Well done!</p>
+<% end %>
